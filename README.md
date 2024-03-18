@@ -1,3 +1,2 @@
 "# aboutme" 
-# aboutme
-## aboutme
+# James Ian Juban
