@@ -14,14 +14,19 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-        
+        <!-- Link to Sweetalert2 -->
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         
 </head>
 <body>
-    <div clas="pre-loader"> </div>
+    <!-- Preloader -->
+	<section>
+		<div id="preloader">
+			<div id="ctn-preloader" class="ctn-preloader"> </div>
 
-
+        </div>
+	</section>
+    <!--End -->
     <section class="hello flex flex-col md:flex-row items-center justify-between py-5 md:py-20">
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row items-center">
@@ -37,10 +42,17 @@
                     <p class="text-lg text-gray-700 mb-4">Currently, on the job training as an web development intern.</p>
                     <p class="text-lg text-gray-700">Always eager to learn and adapt to new technologies to deliver high-quality solutions.</p>
                 </div>
+                <div class="preloader">
+                    <div class="preloader_inner">100%</div>
+                  </div>
+                  
+                  <div class="page">
+                    <h1>Thats it, <a href="javascript:void(0)" class="btn">try again</a></h1>
+                  </div>
             </div>
         </div>
     </section>
-
+    
 
 
 <script src="src/script.js"></script>
