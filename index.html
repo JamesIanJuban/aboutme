@@ -10,6 +10,8 @@
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
         <!-- Remix Icons links -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"/>
+        <!-- Font Awesome Icons links -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,40 +21,126 @@
         
 </head>
 <body>
-    <!-- Preloader -->
-	<section>
-		<div id="preloader">
-			<div id="ctn-preloader" class="ctn-preloader"> </div>
-
-        </div>
-	</section>
-    <!--End -->
-    <section class="hello flex flex-col md:flex-row items-center justify-between py-5 md:py-20">
-        <div class="container mx-auto">
+    <div class="flex flex-col md:flex-row items-center justify-between py-5 md:py-20">
+        <div class="container md:mx-auto">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-4 md:mb-0 md:pr-8">
                     <div class="image-container">
-                        <img src="https://scontent.fceb2-2.fna.fbcdn.net/v/t39.30808-6/313196969_443739844485410_169288306813174926_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH5jedgqBZZkKW6TVUtgG4PW0EVwww9I5FbQRXDDD0jke__BJ7WunjRmMxiPD4zS0zhnaMPKkew8trNDPsB_7_I&_nc_ohc=kioexYZ-hMEAX-qsVaC&_nc_ht=scontent.fceb2-2.fna&cb_e2o_trans=q&oh=00_AfDmHKrphCp_Tj3T408E9mu6-J5zzhV80ygFjKlgbKc7EQ&oe=65FCF2BA" alt="Profile" class="rounded-lg shadow-lg items-center max-w-full">
+                        <img src="https://scontent.fceb2-2.fna.fbcdn.net/v/t39.30808-6/313196969_443739844485410_169288306813174926_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH5jedgqBZZkKW6TVUtgG4PW0EVwww9I5FbQRXDDD0jke__BJ7WunjRmMxiPD4zS0zhnaMPKkew8trNDPsB_7_I&_nc_ohc=kioexYZ-hMEAX-qsVaC&_nc_ht=scontent.fceb2-2.fna&cb_e2o_trans=q&oh=00_AfDmHKrphCp_Tj3T408E9mu6-J5zzhV80ygFjKlgbKc7EQ&oe=65FCF2BA" alt="Profile" class="rounded-full shadow-lg md:pr-8 items-center max-w-full">
                     </div>
+                    <div class="mt-6">
+                        <a href="https://www.facebook.com/jjjamesian0924" class="mx-4"><i class="fab fa-facebook-f text-3xl"></i></a>
+                        <a href="#" class="mx-4"><i class="fab fa-instagram text-3xl"></i></a>
+                        <a href="#" class="mx-4"><i class="fab fa-youtube text-3xl"></i></a>
+                         </div>
                 </div>
                 <div class="md-1/2 mt-6 md:mt-0 md:pl-8">
                     <h3 class="text-2xl font-bold text-gray-800 mb-4">James Ian Juban</h3>
-                    <p class="text-lg text-gray-700 mb-4">A passionate programmer has a basic understanding in Tailwind CSS and JavaScript.</p>
-                    <p class="text-lg text-gray-700 mb-4">With extensive experience in web development, including front-end and back-end technologies.</p>
-                    <p class="text-lg text-gray-700 mb-4">Currently, on the job training as an web development intern.</p>
-                    <p class="text-lg text-gray-700">Always eager to learn and adapt to new technologies to deliver high-quality solutions.</p>
+                    <p class="text-lg font-semibold text-gray-700 mb-4">A passionate programmer has a basic understanding in Tailwind CSS and JavaScript.</p>
+                    <p class="text-lg font-semibold text-gray-700 mb-4">With extensive experience in web development, including front-end and back-end technologies.</p>
+                    <p class="text-lg font-semibold text-gray-700 mb-4">Currently, on the job training as an web development intern.</p>
+                    <p class="text-lg font-semibold text-gray-700">Always eager to learn and adapt to new technologies to deliver high-quality solutions.</p>
+                    <!-- Social media icons -->
+                    
                 </div>
-                <div class="preloader">
-                    <div class="preloader_inner">100%</div>
-                  </div>
-                  
-                  <div class="page">
-                    <h1>Thats it, <a href="javascript:void(0)" class="btn">try again</a></h1>
-                  </div>
             </div>
         </div>
-    </section>
+    </div>
     
+
+     <!-- Preloader -->
+     <div class="preloader">
+        <div class="preloader_inner">100%</div>
+    </div>
+    <div class="page">
+        <div class="text-center">
+            <div class="text-2xl mb-6 font-bold text-blue-200">
+                <button id="reload" class="btn py-2 px-4 bg-gray-500 rounded-lg"></button>            
+            </div>
+        </div>
+    </div>
+    <!--End -->
+
+    <div class="text-center">	
+		<i class="devicons devicon-nodejs-plain wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"></i>
+		<i class="devicons devicon-composer-line-wordmark wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"></i>
+		<i class="devicons devicon-amazonwebservices-plain-wordmark wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"></i>
+		<i class="devicons devicon-laravel-plain-wordmark wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;"></i>
+		<i class="devicons devicon-bootstrap-plain-wordmark wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;"></i>          
+		<i class="devicons devicon-html5-plain-wordmark wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;"></i>
+		<i class="devicons devicon-css3-plain-wordmark wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;"></i> 
+		<i class="devicons devicon-jquery-plain-wordmark wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;"></i>         
+		<i class="devicons devicon-php-plain wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;"></i>
+		<i class="devicons devicon-wordpress-plain-wordmark wow fadeInUp" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;"></i>
+  </div>
+
+    <div class="container">
+        <!-- Personal Information -->
+        <div class="text-left mb-6">
+            <h1 class="text-3xl font-bold text-gray-800">James Ian Juban</h1>
+            <h2 class="text-xl font-semibold text-gray-600">Web Developer</h2>
+        </div>
+        <!-- Personal Info Section -->
+        <div class="text-left">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Personal Info</h2>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="flex items-center">
+                    <p class="text-lg font-semibold text-gray-700 w-32">Date of Birth:</p>
+                    <p class="text-lg text-gray-800">September 24, 1999</p>
+                </div>
+                <div class="flex items-center">
+                    <p class="text-lg font-semibold text-gray-700 w-32">Place of Birth:</p>
+                    <p class="text-lg text-gray-800">City Of Naga Cebu</p>
+                </div>
+                <div class="flex items-center">
+                    <p class="text-lg font-semibold text-gray-700 w-32">Civil Status:</p>
+                    <p class="text-lg text-gray-800">Single</p>
+                </div>
+                <div class="flex items-center">
+                    <p class="text-lg font-semibold text-gray-700 w-32">Citizenship:</p>
+                    <p class="text-lg text-gray-800">Filipino</p>
+                </div>
+                <div class="flex items-center">
+                    <p class="text-lg font-semibold text-gray-700 w-32">Religion:</p>
+                    <p class="text-lg text-gray-800">Roman Catholic</p>
+                </div>
+                <div class="flex items-center">
+                    <p class="text-lg font-semibold text-gray-700 w-32">Height:</p>
+                    <p class="text-lg text-gray-800">5'7ft</p>
+                </div>
+                <div class="flex items-center">
+                    <p class="text-lg font-semibold text-gray-700 w-32">Weight:</p>
+                    <p class="text-lg text-gray-800">60kg</p>
+                </div>
+                    <!-- School Background -->
+                    <div class="text-left mb-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mt-4">School Background</h2>
+                        <p class="text-lg text-gray-800">Bachelor of Science in Information Technology, Asian College of Technology</p>
+                        <p class="text-lg text-gray-800">College level</p>
+                    </div>
+                
+                    <!-- Skills -->
+                    <div class="text-left mb-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Skills</h2>
+                        <ul class="list-disc list-inside">
+                            <li class="text-lg text-gray-800">Proficiency in HTML, CSS, and JavaScript</li>
+                            <li class="text-lg text-gray-800">Experience with front-end frameworks like React or Vue.js</li>
+                            <li class="text-lg text-gray-800">Knowledge of back-end technologies such as Node.js or Django</li>
+                            <li class="text-lg text-gray-800">Understanding of version control systems like Git</li>
+                            <li class="text-lg text-gray-800">Strong problem-solving and debugging skills</li>
+                            <li class="text-lg text-gray-800">Excellent communication and teamwork abilities</li>
+                        </ul>
+                    </div>
+                
+                    <!-- Career Goals -->
+                    <div class="text-left">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Career Goals</h2>
+                        <p class="text-lg text-gray-800">Seeking a challenging position as a Web Developer where I can utilize my skills and knowledge to contribute to the success of the organization while continuing to grow and learn in a dynamic environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 <script src="src/script.js"></script>
