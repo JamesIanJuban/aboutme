@@ -50,8 +50,6 @@
                 // Call _success function if provided and is a function
                 if (typeof _success === 'function') {
                     _success();
-                } else {
-                    console.error("success");
                 }
             }
         }, 20);
