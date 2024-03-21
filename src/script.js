@@ -8,7 +8,7 @@
     displayInfo: function() {
         console.log("Hello! My name is " + this.name + ".");
         console.log("I am " + this.age + " years old.");
-        console.log("I live " +this.Address + ".");
+        console.log("I live " + this.Address + ".");
         console.log(this.School);
         console.log(this.Course);
     }
@@ -19,8 +19,6 @@
 
     loader();
 
-    document.querySelector('.btn').onclick = loader;
-    
     /*====================================
     *     LOADER
     ======================================*/
@@ -59,19 +57,30 @@
         }, 20);
     }
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const reloadContainer = document.getElementById('reload'); // Get the container div
-        const button = document.createElement('button'); // Create a button element
-        button.textContent = 'Reload'; // Set the button text
-        button.type = 'button'; // Set the button type
-        button.classList.add('hover:text-white', 'hover:underline' , 'font-bold' , 'tracking-wide' , 'rounded-lg'); // Add tailwind CSS classes for hover effect
-        button.addEventListener('click', function() {
-            // Add functionality when the button is clicked
-            console.log('Button clicked!');
+// Wait for the DOM content to be loaded
+document.addEventListener('DOMContentLoaded', function () {
+    // Select all elements with the class 'show-more-btn'
+    const showMoreBtns = document.querySelectorAll('.show-more-btn');
+    
+    // Add click event listener to each button
+    showMoreBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+            // Toggle the visibility of the next sibling element
+            const additionalInfoContainer = this.nextElementSibling;
+            additionalInfoContainer.classList.toggle('hidden');
         });
-        reloadContainer.appendChild(button); // Append the button to the container
     });
+});
 
+// Show More function
+let show = document.getElementById('show');
+let shows = document.getElementById('shows');
 
+// Function placeholder for handling click events on the 'shows' element
+function hideshow(){
+};
+
+// Add event listener to the 'shows' element
+shows.addEventListener('click', hideshow); 
    
 

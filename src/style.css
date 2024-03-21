@@ -1,54 +1,115 @@
+/* Reset default margin, padding, and box-sizing */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body,html {
-    background: #e3edf7;
-    height: 100vh;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.preloader{
-    position:fixed;
-    top:0;
-    left:0;
-    margin:auto;
-    width: 100%;
-    height:100%;
-    background: #e3edf7;
-    visibility:hidden;
-    opacity:0;
-    transition:all 0.5s ease;
-    z-index:99999999999999;
-  }
-  .preloader_inner {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 4em;
-    height: 4em;
-    line-height: 4em;
-    text-align: center;
-    font-size: 3em;
-    font-family: monospace;
-    font-weight: 300;
-  }
+/* Set body and html styles */
+body, html {
+  background: #e3edf7; /* Set background color */
+  height: 100vh; /* Set full viewport height */
+  font-family: 'Times New Roman', Times, serif; /* Set font family */
+  font-size: 1rem; /* Set base font size */
+}
 
-  .show{
-    visibility:visible !important;
-    opacity:1 !important;
-    transition:all 0.3s ease;
-  }
-  .container {
-    width: 100%;
-    height: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+/* Preloader styles */
+.preloader {
+  position: fixed; /* Position the preloader fixed */
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%; /* Set full width */
+  height: 100%; /* Set full height */
+  background: #e3edf7; /* Set background color */
+  visibility: hidden; /* Initially hide preloader */
+  opacity: 0; /* Initially make preloader transparent */
+  transition: all 0.5s ease; /* Add transition effect */
+  z-index: 99999999999999; /* Set a high z-index to ensure it's on top */
+}
+
+/* Preloader inner styles */
+.preloader_inner {
+  position: absolute; /* Position inner content absolutely */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; /* Center horizontally and vertically */
+  width: 4em; /* Set width */
+  height: 4em; /* Set height */
+  line-height: 4em; /* Center text vertically */
+  text-align: center; /* Center text horizontally */
+  font-size: 3em; /* Set font size */
+  font-family: monospace; /* Set font family */
+  font-weight: 300; /* Set font weight */
+}
+
+/* Show preloader */
+.show {
+  visibility: visible !important; /* Override visibility to make preloader visible */
+  opacity: 1 !important; /* Override opacity to make preloader opaque */
+  transition: all 0.3s ease; /* Add transition effect */
+}
+
+/* Container styles */
+.container {
+  max-width: 800px; /* Set maximum width */
+  width: 100%; /* Set full width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 0 20px; /* Add padding */
+}
+.profile-section {
+  background-color: #e3edf7; /* Background color for the profile section */
+  padding: 50px 0; /* Padding for spacing */
+}
+
+.container {
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.profile-info {
+  max-width: 600px; /* Limit width for better readability */
+}
+
+.profile__name {
+  font-size: 1.5rem; /* Larger font size for name */
+  font-weight: bold; /* Bold font weight for emphasis */
+  color: #333; /* Dark color for better readability */
+  margin-bottom: 15px; /* Add spacing between name and info */
+}
+
+.profile__info {
+  font-size: 1.125rem; /* Medium font size for info */
+  font-weight: 400; /* Normal font weight */
+  color: #666; /* Lighter color for contrast */
+  line-height: 1.6; /* Line height for better readability */
+  margin-bottom: 15px; /* Add spacing between paragraphs */
+}
+
+/* Show more button */
+.show-more-btn {
+  background-color: #336699; /* Dark blue background */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Padding */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  margin: 20px auto; /* Center horizontally and add space */
+  display: block; /* Display as block to take full width */
+  width: 200px; /* Set button width */
+  text-align: center; /* Center text horizontally */
+  transition: 0.3s; /* Add transition effect */
+}
+
+/* Hover effect */
+.show-more-btn:hover {
+  background-color: #2a517f; /* Darker shade on hover */
+}
+
+/* Pressed effect */
+.show-more-btn:active {
+  background-color: #1d3557; /* Even darker shade when pressed */
 }
