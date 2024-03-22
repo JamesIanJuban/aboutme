@@ -22,15 +22,15 @@
     ======================================*/
     function loader(_success) {
         // Select relevant DOM elements
-        var preloader = document.querySelector('.preloader');
-        var innerLoader = document.querySelector('.preloader_inner');
-        var pageContent = document.querySelector('.page');
+        let preloader = document.querySelector('.preloader');
+        let innerLoader = document.querySelector('.preloader_inner');
+        let pageContent = document.querySelector('.page');
         // Show preloader and hide page content
         preloader.classList.add('show');
         pageContent.classList.remove('show');
         // Initialize progress counter
-        var progress = 0;
-        var interval = setInterval(function() {
+        let progress = 0;
+        let interval = setInterval(function() {
             progress++; // Increment progress
             innerLoader.textContent = progress + '%'; // Update loader text
             // Check if progress reaches 100%
@@ -51,7 +51,7 @@
 // Wait for the DOM content to be loaded
 document.addEventListener('DOMContentLoaded', function () {
     // Select all elements with the class 'show-more-btn'
-    const showMoreBtns = document.querySelectorAll('.show-more-btn');
+    let showMoreBtns = document.querySelectorAll('.show-more-btn');
     
     // Add click event listener to each button
     showMoreBtns.forEach(btn => {
@@ -73,9 +73,9 @@ function hideshow(){
 
 // Function to animate progress bar
 function animateProgressBar(elementId, targetWidth) {
-    const progressBar = document.getElementById(elementId);
+    let progressBar = document.getElementById(elementId);
     let width = 0;
-    const interval = setInterval(frame, 10);
+    let interval = setInterval(frame, 10);
     function frame() {
         if (width >= targetWidth) {
             clearInterval(interval);
