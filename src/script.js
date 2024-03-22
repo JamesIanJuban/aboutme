@@ -16,9 +16,7 @@
 
 // Call the displayInfo method to show information about the student
     student.displayInfo();
-
     loader();
-
     /*====================================
     *     LOADER
     ======================================*/
@@ -27,26 +25,21 @@
         var preloader = document.querySelector('.preloader');
         var innerLoader = document.querySelector('.preloader_inner');
         var pageContent = document.querySelector('.page');
-    
         // Show preloader and hide page content
         preloader.classList.add('show');
         pageContent.classList.remove('show');
-    
         // Initialize progress counter
         var progress = 0;
         var interval = setInterval(function() {
             progress++; // Increment progress
             innerLoader.textContent = progress + '%'; // Update loader text
-    
             // Check if progress reaches 100%
             if (progress === 100) {
                 // Hide preloader and show page content
                 preloader.classList.remove('show');
-                pageContent.classList.add('show');
-                
+                pageContent.classList.add('show'); 
                 clearInterval(interval); // Stop interval
                 progress = 0; // Reset progress counter
-    
                 // Call _success function if provided and is a function
                 if (typeof _success === 'function') {
                     _success();
@@ -78,7 +71,29 @@ let shows = document.getElementById('shows');
 function hideshow(){
 };
 
-// Add event listener to the 'shows' element
-shows.addEventListener('click', hideshow); 
-   
+// Function to animate progress bar
+function animateProgressBar(elementId, targetWidth) {
+    const progressBar = document.getElementById(elementId);
+    let width = 0;
+    const interval = setInterval(frame, 10);
+    function frame() {
+        if (width >= targetWidth) {
+            clearInterval(interval);
+        } else {
+            width++;
+            progressBar.style.width = width + '%';
+            progressBar.textContent = width + '%';
+        }
+    }
+}
 
+// Animate progress bars on window load
+window.onload = function() {
+    animateProgressBar('progress1', 80); // HTML - 80%
+    animateProgressBar('progress2', 80); // CSS - 80%
+    animateProgressBar('progress3', 30); // JavaScript - 30%
+    animateProgressBar('progress4', 10); // VUE.JS - 10%
+    animateProgressBar('progress5', 75); // FIGMA - 75%
+    animateProgressBar('progress6', 80); // CANVA - 80%
+    animateProgressBar('progress7', 75); // STRONG PROBLEM-SOLVING - 70%
+};
