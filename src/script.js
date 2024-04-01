@@ -91,9 +91,12 @@ function animateProgressBar(elementId, targetWidth) {
 window.onload = function() {
     animateProgressBar('progress1', 80); // HTML - 80%
     animateProgressBar('progress2', 80); // CSS - 80%
-    animateProgressBar('progress3', 30); // JavaScript - 30%
+    animateProgressBar('progress3', 40); // JavaScript - 40%
     animateProgressBar('progress4', 5); // VUE.JS - 5%
     animateProgressBar('progress5', 75); // FIGMA - 75%
     animateProgressBar('progress6', 80); // CANVA - 80%
     animateProgressBar('progress7', 75); // STRONG PROBLEM-SOLVING - 70%
+    animateProgressBar('progress8', 90); // Communication - 90%
+    animateProgressBar('progress9', 60); // Team Work - 60%
 };
+
